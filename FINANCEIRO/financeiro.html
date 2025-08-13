@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>calculadora financeira</title>
+    <link rel="stylesheet" href="style_financeiro.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">CALCULADORA DE ORÇAMENTO PESSOAL</h1>
+    </header>
+    <main>
+        <form action="/" method="post">
+        <section>
+            <label for="valor">Valor: </label>
+            <input type="number" name="valor" id="valor">
+        </section>
+        <section>
+            <label for="categoria">Categoria: </label>
+            <select name="categoria"  id="categoria">
+                <option value="1">Sálario</option>
+                <option value="2">Renda extras</option>
+                <option value="3">Mercado</option>
+                <option value="4">Automovel</option>
+                <option value="5">Despesas fixas</option>
+                <option value="6">Outros</option>
+            </select><br>
+        </section>
+        <section>
+            <label for="receita">Receita: </label>
+            <input type="radio" name="tipo" id="receita">
+            <label for="despesas">Despesas: </label>
+            <input type="radio" name="tipo" id="despesas">
+        </section>
+        <button type="submit">adicionar</button>
+        </form>
+        <p id="saldo"><strong>Saldo: R$</strong> </p>
+        <section>
+            <table>
+                <thead><strong>Valor</strong>
+                    <strong>Categoria</strong>
+                    <strong>Tipo</strong>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
